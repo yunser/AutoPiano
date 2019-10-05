@@ -16,20 +16,26 @@
     .menu-item:hover::after { transform: scaleX(1); }
   }
 }
+.help {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  line-height: 1;
+  color: #666;
+}
 </style>
 
 <template>
   <div class="component-page-header clearfix" ref="PageHeaderComponent">
     <a class="trade-mark" target="_blank" href="http://www.autopiano.cn" >
       <i class="icon-piano"></i>
-      <h1 class="trade-mark-txt">自由钢琴<span class="trade-mark-txt--en">AutoPiano.cn</span></h1>
+      <h1 class="trade-mark-txt">弹钢琴</h1>
+      <a class="help" href="https://project.yunser.com/products/303146a0e72611e9b3383db1f29a6f8b" target="_blank">帮助</a>
     </a>
-    <div class="menu">
+    <!-- <div class="menu">
       <router-link class="menu-item" :to="{ path: '/' }" active-class="menu-item-active" exact>首页</router-link>
-      <router-link class="menu-item" :to="{ path: '/links' }" active-class="menu-item-active" exact>友情链接</router-link>
       <a class="menu-item" @click.stop="emitChangeWallPaper">更换壁纸</a>
-      <!--<a class="menu-item" >钢琴基础教学</a>-->
-    </div>
+    </div> -->
   </div>
 </template>
 
